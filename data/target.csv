@@ -1,0 +1,41 @@
+type,senator,senate_district,party,notes,region
+Sponsor,Brooks,8,D,won close race in recount. 258 votes,Long Island
+Sponsor,Kaminsky,9,D,"Newly elected Senator, Voted for bill in Assembly in 2015",Long Island
+Sponsor,Sanders,10,D,,
+Sponsor,Avela,11,D/IDC,,
+Sponsor,Gianaris,12,D,Sympathetic,Queens
+Sponsor,Peralta,13,D,,
+Sponsor,Comrie,14,D,,
+Sponsor,Addaboo,15,D,,
+Sponsor,Stavisky,16,D,,
+Sponsor,Dilan,18,D,,
+Sponsor,Persaud,19,D,,
+Sponsor,Hamilton,20,D/IDC,,
+Sponsor,Parker,21,D,,
+Sponsor,Savino,23,D/IDC,"Years ago, verbally pledged to support the bill",NYC (Staten Island/BK)
+Sponsor,Montgomery,25,D,,
+Sponsor,Squadron,26,D,,
+Sponsor,Hoylman,27,D,,
+Sponsor,Krueger,28,D,,
+Sponsor,Serrano,29,D,,
+Sponsor,Benjamin,30,D,,
+Sponsor,Alcantara,31,D,,
+Sponsor,Diaz,32,D,,NYC (Bronx)
+Sponsor,Rivera,33,D,,
+Sponsor,Klein,34,D/IDC,,Bronx
+Sponsor,Stewart-Cousins,35,D,"Pledged to vote for it, but won't officially cosponsor because of her leadership position",Westchester
+Sponsor,Hassell-Thompson,36,D,,
+Sponsor,Latimer,37,,,
+Sponsor,Carlucci,38,D/IDC,Seems very sympathetic. Verbal pledge to vote for bill if it comes to floor,Hudson Valley
+Sponsor,Breslin,44,D,Capital District,
+Sponsor,Valesky ,53,D/IDC,,Syracuse
+Sponsor,Kennedy,63,D,,Buffalo
+Target,Elaine Phillips,7,R,close race ,Long Island
+Target,Felder,17,D ,Caucuses with Republicans; Mike Schweinberg very close to him. Will follow up in July ,NYC (Brooklyn)
+Target,Golden,22,R,,NYC (Brooklyn)
+Target,Murphy,40,R,,Hudson Valley
+Target,Serino,41,R,"Take Back 18 in Hudson Valley working on this district, and Terry Gibson is running to take the seat back",Hudson Valley
+Target,Ritchie,48,R,"We have some Campaign supporters, 1199 has connection via Family Leave","Oswego, Jefferson Co"
+Target,Funke,55,R,Grain of salt: pledged to vote for bill if it came to floor,Rochester
+Target,Robach,56,R,,Rochester
+Target,Chris Jacobs,60,R,,Buffalo
