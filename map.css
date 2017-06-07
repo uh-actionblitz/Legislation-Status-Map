@@ -1,0 +1,72 @@
+#mapid { height: 100vh; }
+
+#mapid .leaflet-overlay-pane path.leaflet-interactive {
+  stroke-width: 1;
+}
+
+#mapid .leaflet-interactive {
+  fill-opacity: 0.7;
+  transition: fill-opacity 0.35 ease;
+}
+
+#mapid .leaflet-interactive:hover {
+  fill-opacity: 0.9;
+}
+/*
+ *    Popup Styles
+ */
+
+
+.senator-popup .leaflet-popup-tip-container {
+  margin-top: -1px;
+}
+
+
+.senator-popup {
+  padding: 0.85rem;
+  width: 320px;
+}
+
+.senator-popup .leaflet-popup-content:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.senator-image-container {
+  float: left;
+  margin-right: 1rem;
+  width: 100px;
+}
+
+.senator-image-container img {
+  width: 100%;
+}
+
+.senator-info {
+  font-size: .875rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.senator-info .votes-no {
+  color: red;
+}
+
+.senator-info .votes-yes {
+  color: black;
+  font-weight: bold;
+}
+
+.contact-button {
+  background-color: #1274b9;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  clear: both;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  font-size: .875rem;
+  text-transform: uppercase;
+  width: 100%;
+}
