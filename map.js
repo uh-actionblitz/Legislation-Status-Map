@@ -5,15 +5,15 @@ void function ($, _) {
 
   mymap = L.map('mapid').setView([42.863,-74.752], 6.55);
 
-  var tileLayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.light',
     accessToken: 'pk.eyJ1IjoibXJzbmlja2VycyIsImEiOiJjajNjM2ozNmswMDB4MnBzMWh6ZzZnNXQ1In0.HK0L0_LWCcc8Qihk0gNpYg'
   }).addTo(mymap);
 
-  var mapFetch = $.getJSON('/data/nys-senatemap.json');
-  var senatorStatusFetch = $.getJSON('/data/status.json');
+  var mapFetch = $.getJSON('data/nys-senatemap.json');
+  var senatorStatusFetch = $.getJSON('data/status.json');
 
   $.when(mapFetch, senatorStatusFetch).then(function(map, s) {
     var senators = s[0];
@@ -86,31 +86,10 @@ void function ($, _) {
 
       layer.bindPopup(popup).openPopup();
     }
-
-    function resetFeature (layer) {
-      geojson.resetStyle(layer);
-    }
-
+    
     //
     //  Event Handlers
     //
-    function handleMouseOver (e) {
-      // highlight feature
-      var layer = e.target;
-
-      layer.setStyle({
-        weight: 2,
-      });
-
-      // ¯\_(ツ)_/¯
-      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-      }
-    }
-
-    function handleMouseOut (e) {
-      resetFeature(e.target);
-    }
 
     function handleClick (e) {
       var layer = e.target;
@@ -120,8 +99,6 @@ void function ($, _) {
 
     function onEachFeature(feature, layer) {
       layer.on({
-        mouseover: handleMouseOver,
-        mouseout: handleMouseOut,
         click: handleClick
       });
     }
