@@ -20,6 +20,10 @@ The project uses the following:
 
 Checkout this **[project brief](https://docs.google.com/document/d/1AkFDC2aHv0ScajGSI6ZSOj0z8j-y2GFw6CmjnVeXelo/edit)** to get a sense of what we want to accomplish.
 
+We are using [Git Hubflow](https://gist.github.com/kjunggithub/8330157)! Check out the [cheatsheet](https://gist.github.com/kjunggithub/8330157) to learn more how to contribute. If you want to add a feature:
+
+`git hf feature start <your feature>`
+
 ## Want to add features?
 
 Click **[here](https://github.com/uh-actionblitz/Legislation-Status-Map/issues/new?labels=feature-add&title=Feature%20Request:%20%3CReplace%20this%20with%20the%20feature%20you%20want%20added%3E)** to add a feature you want to see in this proeject.
