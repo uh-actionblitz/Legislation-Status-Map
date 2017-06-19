@@ -1,9 +1,53 @@
-body, html { margin: 0; padding: 0; }
+/* Clearing inherent stylings */
+body, html { margin: 0; padding: 0; font-family: sans-serif;}
+h1,h2,h3,h4,h5,ul,li,p,form { margin: 0; padding: 0; }
+li { list-style: none; }
+
+.shadowed-box {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
 #container {
   #viewport {
     position: relative;
   }
 }
+
+#state-senate-search {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  z-index: 1000;
+
+  #form-area {
+    @extend .shadowed-box;
+    position: relative;
+    h3 { font-size: 14px; }
+    input[type=text]{
+      padding: 5px;
+      font-size: 15px;
+      width: 400px;
+      margin-top: 5px;
+    }
+    // #suggestions {
+    //   position: absolute;
+    //   top: 68px;
+    //   width: 378px;
+    //   background-color: white;
+    //   border: #cccccc 1px solid;
+    //   padding: 10px;
+    // }
+  }
+
+  #results-area {
+    @extend .shadowed-box;
+    margin-top: 10px;
+  }
+}
+
 #mapid {
   height: 100%;
   width: 100%;
